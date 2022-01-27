@@ -16,6 +16,7 @@ int main()
 	setlocale(LC_ALL, "ru");
 	//cube(2);
 	diceGame();
+	system("pause");
 	return 0;
 
 }
