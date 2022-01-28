@@ -28,6 +28,7 @@ void cube(int a) {
 	cout << " |       ||" << endl;
 	cout << " |   "<< a << "   ||" << endl;
 	cout << " |_______|/" << "\t";
+	cout <<" Бросок кубика! ";
 	system("pause");
 
 }
@@ -39,7 +40,7 @@ void diceGame() {
 	for (int i = 0; i < rows; i++) {
 		for (int j = 0; j < cols; j++) {
 			arr[i][j] = rand() % 7;
-			cout << arr[i][j] << "\t";
+			//cout << arr[i][j] << "\t";
 		}
 		cout << endl;
 
