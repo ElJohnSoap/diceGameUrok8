@@ -39,12 +39,13 @@ void diceGame() {
 	srand(time(0));
 	for (int i = 0; i < rows; i++) {
 		for (int j = 0; j < cols; j++) {
-			arr[i][j] = rand() % 7;
-			//cout << arr[i][j] << "\t";
+			arr[i][j] = rand()% 6+1;
+			cout << arr[i][j] << "\t";
 		}
-		cout << endl;
+		//cout << endl;
 
 	}
+	cout << endl << "  ИГРА \" КУБИКИ\"" << endl << endl;
 	cout << "Для выбора права первого хода нажмите ENTER" << endl;
 	cin.get();
 	int fist = rand() % 2;
@@ -53,7 +54,7 @@ void diceGame() {
 	cout << endl << endl;
 	for (int j = 0; j < cols; j++) {
 		for (int i = 0; i < rows; i++, priority++) {
-			cout << j+1;
+			cout << " " << j + 1;
 			(priority%2) ? cout << " ход ИИ" : cout << " ход человека";
 			cout << endl;
 			cube(arr[i][j]);
